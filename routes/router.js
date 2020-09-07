@@ -20,7 +20,7 @@ router.get("/" ,showsignUp.showSignUp);
 router.post("/signUp" ,validationsignUp.validation, signUpController.signup);
 router.get("/index" ,showsignIn.showsignIn)
 router.post("/login", signvalidation.valid,hanfelsignin.signIn);
-router.patch("/addpic",islogedIn,addPic.addupic);
+//router.patch("/addpic",islogedIn,addPic.addupic);
 router.get("/home", islogedIn,showhome.showHome);
 router.post("/addnotes",islogedIn,addNote.addMyNote )
 router.get("/profile", islogedIn,myProfileseting.showprofile);
